@@ -107,6 +107,11 @@ main {
   font-family: Arial, sans-serif;
   margin: 20px;
 }
+
+.features-img img{
+   height: 90%;
+   margin-left: 90px;
+}
 .ten-years-badge{
   border:1px solid #28c86b;
   border-radius: 9px;
@@ -116,9 +121,17 @@ main {
   padding: 10px;
   text-align: center;
   color: white;
-  /* font-size: 1rem; */
-  /* font-weight: 1000;
+  position: relative;
+  bottom: 50px;
 }
+.ten-years-badge h1{
+  margin: 0;
+  font-size: 2rem;
+}
+.ten-years-badge p{
+  font-size: 1.5rem;
+}
+
 
 /* ----------------------------------------------------------------------- */
 
@@ -172,6 +185,12 @@ main {
   width: 165px;
 }
 
+
+
+
+
+
+
 /* responsive style */
 /* mobile devices */
 
@@ -201,6 +220,16 @@ main {
     display: flex;
     flex-direction: column;
   }
+  .features{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features-img img{
+   width: 100%;
+   margin: 0;
+ }
+
 }
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -215,5 +244,9 @@ main {
   .sponsors-img-container {
     flex-direction: column;
     align-items: center;
+  }
+  .features{
+    display: flex;
+    flex-direction: column;
   }
 }
